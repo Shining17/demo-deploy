@@ -10,7 +10,7 @@ class DemoDeployApplicationTests {
     void contextLoads() {
         // 단위 테스트
         // MVC 테스트 -> 목업통해서 가상 처리 가능
-//        테스트가 실패 되면 반영 x
+//        테스트가 실패 되면 반영 x (깃에는 반영, 배포 및 운영 반영 X)
         int a= 1/0;
         throw new RuntimeException("오류발생");
 
