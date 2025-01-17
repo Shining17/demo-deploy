@@ -41,5 +41,7 @@ jobs:
       # chmod +x ./gladlew : 퍼미션 오류 발생 시 처리
       # ./gradlew clean build
       - name: 단위 테스트 및 빌드
-        run:
+        # 명령어가 여러개면 | 추가
+        run: |
+          chmod +x ./gladlew
           ./gradlew clean build
